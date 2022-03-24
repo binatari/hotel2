@@ -19,7 +19,7 @@ const Autocomplete = () => {
         <div style={{width:"100%"}}>
            <ReactSearchAutocomplete
             items={items}
-            placeholder={'Search for Rooms, Apartments or Penthouses...'}
+            placeholder={'Search for Rooms...'}
             styling={
                 {
                     border:'none',
