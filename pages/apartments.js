@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "../Components/Carousel";
 import Title from "../Components/Title";
-
+import Head from "next/head";
 const apartments = () => {
   const stan1 = ["stan1", "stan1b", "stan1c"];
   const stan2 = ["stan2", "stan2b",];
@@ -10,17 +10,24 @@ const apartments = () => {
   const luxury = ['luxury', 'luxury1']
   const home = ['home', 'home1', 'home2']
   return (
-    <div className="container mx-auto">
-      <div className="pt-28 pb-10 px-4">
+    <div className="container mx-auto md:px-12">
+      <Head>
+        <title>Alphamsa Service apartments</title>
+        <meta name="description" content="Alphamsa service apartments official website" />
+        <link rel="icon" href="/assets/Alphamsa Logo.png" />
+      </Head>
+      <div className="pt-28 pb-10 px-4" id="rooms">
         <Title text="Rooms" />
         <div className="flex items-center">
           <p>
             Our <strong>Room</strong> Apartments contain AC, TV & Fridge powered
             with uninterrupted power supply.
           </p>
+          <a href="https://wa.me/08037181261">
           <button className="bg-black px-6 py-2 text-white ml-4 flex-shrink-0">
             Book Now
           </button>
+          </a>
         </div>
         <div className="grid grid-cols-12 gap-y-10 gap-x-6 justify-center py-12">
           <div className="md:col-span-6 col-span-12">
@@ -34,16 +41,18 @@ const apartments = () => {
           </div>
         </div>
       </div>
-      <div className="pt-12 pb-10 px-4">
+      <div className="pt-12 pb-10 px-4" id="suite">
         <Title text="Suites" />
         <div className="flex items-center">
           <p>
             Our <strong>Suite</strong> Apartments come exclusive with their own
             living room and standard facilities like AC, TV & Fridge
           </p>
+          <a href="https://wa.me/08037181261">
           <button className="bg-black px-6 py-2 text-white ml-4 flex-shrink-0">
             Book Now
           </button>
+          </a>
         </div>
         <div className="grid grid-cols-12 gap-y-10 gap-x-6 justify-center py-12">
           <div className="md:col-span-6 col-span-12">
@@ -57,16 +66,20 @@ const apartments = () => {
           </div>
         </div>
       </div>
-      <div className="pt-12 pb-10 px-4">
+      <div className="pt-12 pb-10 px-4" id="penthouse">
         <Title text="Penthouse" />
         <div className="flex items-center ">
           <p>
             Our Penthouse Apartments is luxury at it highest floor, equipped
             with a living room, standard AC, TV & Fridge
           </p>
+          <a href="https://wa.me/08037181261">
+          <a href="https://wa.me/08037181261">
           <button className="bg-black px-6 py-2 text-white ml-4 flex-shrink-0">
             Book Now
           </button>
+          </a>
+          </a>
         </div>
         <div className="relative min-h-[34rem] bg-[url(../public/assets/penthouse.jpeg)] bg-cover bg-center w-full mt-16">
           <div className="bg-black absolute top-0 left-0 text-white text-2xl font-semibold  px-6 py-2">

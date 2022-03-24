@@ -1,10 +1,16 @@
 import React from "react";
-
+import Map from "../Components/Map";
+import Head from "next/head";
 const about = () => {
   return (
     <>
       <div className="py-28">
-        <div className="container mx-auto flex justify-center items-center flex-col">
+      <Head>
+        <title>Alphamsa Service apartments</title>
+        <meta name="description" content="Alphamsa service apartments official website" />
+        <link rel="icon" href="/assets/Alphamsa Logo.png" />
+      </Head>
+        <div className="container mx-auto flex justify-center items-center flex-col px-6">
           <h1 className="text-5xl pb-2 text-center">About Us</h1>
           <p className="text-center pt-6">
             We offer a secured and comfortable short time stay at our well
@@ -22,7 +28,9 @@ const about = () => {
         </div>
       </div>
       <section className="bg-[#1E1D28] grid grid-cols-6 ">
-        <div className="col-span-6 md:col-span-4 "></div>
+        <div className="col-span-6 md:col-span-4 ">
+          <Map/>
+        </div>
         <div className="px-10 col-span-6 md:col-span-2 text-white py-6">
           <h2 className="py-6 text-2xl font-bold">Contact Us</h2>
           <div className="border-y-[1px] border-solid border-gray-200 border-opacity-25 py-6 ">

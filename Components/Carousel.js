@@ -23,11 +23,11 @@ export default function Carousel({images, text}) {
     nextEl: '.next',
   }}
    className="flex justify-center items-center relative text-white text-2xl font-semibold min-h-[26rem] w-full">
-       <div className="prev absolute top-1/2 left-8 z-10">
-          <span className="text-base">previous</span> 
+       <div className="prev absolute top-1/2 left-8 z-10 cursor-pointer">
+          <img src={require('../public/icons/arrow.png').default.src} alt="" className="max-h-[2rem] rotate-180" />
        </div>
-       <div className="next absolute top-1/2 right-8 z-10">
-          <span  className="text-base">next</span> 
+       <div className="next absolute top-1/2 right-8 z-10 cursor-pointer">
+       <img src={require('../public/icons/arrow.png').default.src} alt="" className="max-h-[2rem] "/>
        </div>
        <div className="absolute w-full bg-black py-4 z-10 top-0 px-4">
       {text}

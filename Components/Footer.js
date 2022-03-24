@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -17,23 +18,29 @@ const Footer = () => {
       <div className="text-white px-6">
         <h2 className="text-2xl">Quick Link</h2>
         <ul>
-          <li>Home</li>
-          <li>Our Services</li>
-          <li>
+          <Link href={'/'}>
+          <li className="cursor-pointer">Home</li>
+          </Link>
+          <Link href={'/apartments'}>
+          <li className="cursor-pointer">Our Apartments</li>
+          </Link>
+          <Link href={'/about'}>
+          <li className="cursor-pointer">
            About Us
           </li>
+          </Link>
         </ul>
       </div>
-      <div className="flex items-center justify-center px-6">
-        <img src="" alt="" />
-        <div className="flex bg-white">
-         <img src="" alt="" />
-         <h2 className="text-2xl">Contact us Via Email</h2>
+      <a href="mailto:alphamsaserviceapartment@gmail.com" className="flex flex-col items-center justify-center px-6">
+        <img src={require('../public/icons/nosmoking.png').default.src} alt="" className="py-4" />
+        <div className="flex bg-white items-center py-4 px-6">
+         <img src={require('../public/icons/mail.png').default.src} alt="" className="max-h-[1.5rem] mr-4" />
+         <h2 className="text-2xl underline">Contact us Via Email</h2>
         </div>
-      </div>
+      </a>
     </div>
     <div className=" flex justify-center items-center text-white py-6">
-        &copy; 2022 Alphamasa Service Apartment. All rights reserved 
+      <p className="px-6"> &copy; 2022 Alphamsa Service Apartment. All rights reserved </p>
       </div>
     </> 
   );
