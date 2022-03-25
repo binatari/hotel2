@@ -52,7 +52,7 @@ export default function Home() {
             <Link href={'/apartments#suite'}>
             <div className="bg-[url(../public/assets/home.jpeg)]  min-h-[20rem] bg-cover bg-bottom relative before:absolute before:w-full before:h-full before:bg-black before:opacity-40 flex items-end cursor-pointer">
               <div className="flex justify-between px-8 py-8 text-2xl text-bold">
-                <span className="z-10">Suite (1)</span>
+                <span className="z-10">Suite (3)</span>
                 <img src="" alt="" />
               </div>
             </div>
@@ -78,14 +78,14 @@ export default function Home() {
               header={"Secured & Comfortable"}
               src="green-icon.png"
               text={
-                "At Aphlaapartments our customer is our pride, and we ensure that they have a delightful stay with on demand customer services to cateer to their needs."
+                "Alphamsa apartments are suited in a secured location with comfortable ambience. Do rest assured to have a pleasant stay."
               }
             />
             <Feature
               header={"Excellent Customer Service"}
               src="black.png"
               text={
-                "At Aphlaapartments our customer is our pride, and we ensure that they have a delightful stay with on demand customer services to cateer to their needs."
+                "At Aphlamsa apartments our customer is our pride, and we ensure that they have a delightful stay with on demand customer services to cateer to their needs."
               }
             />
           </div>
