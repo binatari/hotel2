@@ -1,7 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-
+import { useRouter } from 'next/router'
 const Drawer = ({show, handleShow}) => {
+  const router = useRouter()
+  const handleClick = (e) =>{
+    e.preventDefault()
+    handleShow(false)
+    router.push(e.target.id)
+  }
   return (
     <div className={`w-screen h-screen bg-white top-0 left-0 md:hidden z-[100] ${show? 'fixed':'hidden'}`}>
         <ul className='flex flex-col'>
@@ -14,23 +20,18 @@ const Drawer = ({show, handleShow}) => {
       </svg>
       </button>
       </li>
-      <Link href='/'>
-            <a className=' px-6 py-2 text-center my-4'>
+            <button id='/' className=' px-6 py-2 text-center my-4' onClick={(e)=>handleClick(e)}>
             Home
-            </a>
-            </Link>
-      <Link href='/apartments'>
-            <a className=' px-6 py-2 text-center my-4'>
+            </button>
+           
+            <button id='/apartments' className=' px-6 py-2 text-center my-4' onClick={(e)=>handleClick(e)}>
             Our Apartments
-            </a>
-            </Link>
-            <Link href='/about'>
-            <a className=' px-6 py-2 text-center my-4'>
+            </button>
+            <button id='/about' className=' px-6 py-2 text-center my-4' onClick={(e)=>handleClick(e)}>
              About Us
-            </a>
-            </Link>
+            </button>
             <li className='bg-black px-6 py-2 text-white text-center my-4'>
-              <a href="https://wa.me/08037181261">
+              <a href="https://api.whatsapp.com/send?phone=%2B2348037181261&text&app_absent=0">
              <button className='bg-black'>
                 Book Now 
              </button>

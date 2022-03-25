@@ -24,7 +24,7 @@ const Nav = ({show, handleShow}) => {
             </a>
             </Link>
             <li className='bg-black px-6 py-2 text-white'>
-              <a href="https://wa.me/08037181261">
+              <a href="https://api.whatsapp.com/send?phone=%2B2348037181261&text&app_absent=0">
              <button className='bg-black'>
                 Book Now 
              </button>

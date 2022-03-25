@@ -14,12 +14,12 @@ export default function Home() {
       </Head>
       <main className="min-h-screen bg-[url(../public/assets/home.jpeg)] bg-cover bg-no-repeat bg-bottom flex items-center justify-center">
         <div className="flex flex-col justify-center items-center text-white w-4/5">
-          <h1 className="text-3xl md:text-5xl pb-2 text-center">
-            Find the Perfect Shortlet Today
+          <h1 className="text-4xl  md:text-5xl pb-2 text-center">
+            Find the Perfect Shortlet Today!
           </h1>
           <span className="text-center mx-auto">
             We offer a wide range of comfortable and beautiful apartments at
-            affordible Prices
+            affordable Prices
           </span>
           <div className="flex w-full justify-center mt-10">
             <div className="bg-white flex w-3/5 mr-4">
@@ -42,7 +42,7 @@ export default function Home() {
             </div>
             </Link>
             <Link href={'/apartments#penthouse'}>
-            <div className="bg-[url(../public/assets/penthouse1.jpeg)]  min-h-[20rem] bg-cover bg-bottom relative before:absolute before:w-full before:h-full before:bg-black before:opacity-40 flex items-end cursor-pointer">
+            <div className="bg-[url(../public/assets/penthouse.jpeg)]  min-h-[20rem] bg-cover bg-bottom relative before:absolute before:w-full before:h-full before:bg-black before:opacity-40 flex items-end cursor-pointer">
               <div className="flex justify-between px-8 py-8 text-2xl text-bold">
                 <span className="z-10">Penthouse (1)</span>
                 <img src="" alt="" />

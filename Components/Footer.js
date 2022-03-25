@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
       <>
-    <div className="grid grid-cols-1 md:grid-cols-3 container mx-auto gap-6 ">
+    <div className="grid grid-cols-1 md:grid-cols-3 container mx-auto gap-6 px-6 md:px-12">
       <div className="text-white px-6">
         <h2 className="text-2xl">Contact info</h2>
         <ul>
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
       </a>
     </div>
-    <div className=" flex justify-center items-center text-white py-6">
+    <div className=" flex justify-center items-center text-white py-6 px-6 md:px-12 border-t-2 border-white border-opacity-20 mt-6">
       <p className="px-6"> &copy; 2022 Alphamsa Service Apartment. All rights reserved </p>
       </div>
     </> 

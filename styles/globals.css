@@ -98,6 +98,30 @@ p.chill{
   background-image: url(../public/assets/luxury1.jpeg);
 }
 
+.penthouse{
+  background-image: url(../public/assets/penthouse.jpeg);
+}
+
+.penthouseb{
+  background-image: url(../public/assets/penthouseb.jpeg);
+}
+
+.penthousec{
+  background-image: url(../public/assets/penthousec.jpeg);
+}
+
+.penthoused{
+  background-image: url(../public/assets/penthoused.jpeg);
+}
+
+.penthousee{
+  background-image: url(../public/assets/penthousee.jpeg);
+}
+
+.penthousef{
+  background-image: url(../public/assets/penthousef.jpeg);
+}
+
 .line {
   fill: none;
   stroke: black;
