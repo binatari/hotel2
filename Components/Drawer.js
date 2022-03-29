@@ -9,7 +9,7 @@ const Drawer = ({show, handleShow}) => {
     router.push(e.target.id)
   }
   return (
-    <div className={`w-screen h-screen bg-white top-0 left-0 md:hidden z-[100] ${show? 'fixed':'hidden'}`}>
+    <div className={`w-screen max-w-[30rem] h-screen bg-white top-0 right-0 md:hidden z-[100] ${show? 'fixed':'hidden'}`}>
         <ul className='flex flex-col'>
         <li className='flex items-center justify-end px-12'>
         <button className={`w-10 h-12 py-1  md:hidden flex justify-end ${show && 'opened mt-5'}`} onClick={()=>handleShow(!show)}>

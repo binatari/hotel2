@@ -4,6 +4,8 @@ import Feature from "../Components/Feature";
 import Title from "../Components/Title";
 import Link from 'next/link'
 import Autocomplete from "../Components/Autocomplete";
+import Video from "../Components/Video";
+import Modal from "../Components/Modal";
 export default function Home() {
   return (
     <div>
@@ -31,7 +33,10 @@ export default function Home() {
       </main>
       <div className="container mx-auto md:px-12">
         <section className="py-10">
+          <div className="flex justify-between items-center px-4">
           <Title text={"Our Apartments"} />
+          <Modal/>
+          </div>
           <div className="grid md:grid-cols-2 grid-rows-2 gap-6 px-4 text-white">
             <Link href={'/apartments#rooms'}>
             <div className="bg-[url(../public/assets/room3.jpeg)] row-span-2 min-h-[20rem] relative bg-cover bg-bottom before:absolute before:w-full before:h-full before:bg-black before:opacity-40 flex items-end cursor-pointer">
@@ -61,6 +66,7 @@ export default function Home() {
         </section>
         <section className="px-10 py-10">
           <Title text={"Why Choose Us"} />
+         
           <div className="grid sm:grid-cols-2 gap-4">
             <Feature
               header={"Affordable Prices"}

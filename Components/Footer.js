@@ -10,6 +10,7 @@ const Footer = () => {
         <ul>
           <li>08037181261</li>
           <li>08036337700</li>
+          <li><a href="https://instagram.com/alphamsa_int?utm_medium=copy_link">Connect on Instagram</a></li>
           <li>
             No.1 Ahmed Kigo Road, Off Shehu Lamino Avenue NITR Quarters, Kaduna
           </li>
