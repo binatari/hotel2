@@ -91,7 +91,7 @@ export default function Home() {
               header={"Excellent Customer Service"}
               src="black.png"
               text={
-                "At Aphlamsa apartments our customer is our pride, and we ensure that they have a delightful stay with on demand customer services to cateer to their needs."
+                "At Alphamsa apartments our customer is our pride, and we ensure that they have a delightful stay with on demand customer services to cateer to their needs."
               }
             />
           </div>

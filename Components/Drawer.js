@@ -20,14 +20,14 @@ const Drawer = ({show, handleShow}) => {
       </svg>
       </button>
       </li>
-            <button id='/' className=' px-6 py-2 text-center my-4' onClick={(e)=>handleClick(e)}>
+            <button id='/' className=' px-6 py-2 text-center my-4 hover:text-[#AC8B12]' onClick={(e)=>handleClick(e)}>
             Home
             </button>
            
-            <button id='/apartments' className=' px-6 py-2 text-center my-4' onClick={(e)=>handleClick(e)}>
+            <button id='/apartments' className=' px-6 py-2 text-center my-4 hover:text-[#AC8B12]' onClick={(e)=>handleClick(e)}>
             Our Apartments
             </button>
-            <button id='/about' className=' px-6 py-2 text-center my-4' onClick={(e)=>handleClick(e)}>
+            <button id='/about' className=' px-6 py-2 text-center my-4 hover:text-[#AC8B12]' onClick={(e)=>handleClick(e)}>
              About Us
             </button>
             <li className='bg-black px-6 py-2 text-white text-center my-4'>

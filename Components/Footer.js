@@ -10,7 +10,7 @@ const Footer = () => {
         <ul>
           <li>08037181261</li>
           <li>08036337700</li>
-          <li><a href="https://instagram.com/alphamsa_int?utm_medium=copy_link">Connect on Instagram</a></li>
+          <li><a href="https://instagram.com/alphamsa_int?utm_medium=copy_link" className="hover:text-[#AC8B12]">Connect on Instagram</a></li>
           <li>
             No.1 Ahmed Kigo Road, Off Shehu Lamino Avenue NITR Quarters, Kaduna
           </li>
@@ -20,13 +20,13 @@ const Footer = () => {
         <h2 className="text-2xl">Quick Link</h2>
         <ul>
           <Link href={'/'}>
-          <li className="cursor-pointer">Home</li>
+          <li className="cursor-pointer hover:text-[#AC8B12]">Home</li>
           </Link>
           <Link href={'/apartments'}>
-          <li className="cursor-pointer">Our Apartments</li>
+          <li className="cursor-pointer hover:text-[#AC8B12]">Our Apartments</li>
           </Link>
           <Link href={'/about'}>
-          <li className="cursor-pointer">
+          <li className="cursor-pointer hover:text-[#AC8B12]">
            About Us
           </li>
           </Link>
@@ -34,7 +34,7 @@ const Footer = () => {
       </div>
       <a href="mailto:alphamsaserviceapartment@gmail.com" className="flex flex-col items-center justify-center px-6">
         <img src={require('../public/icons/nosmoking.png').default.src} alt="" className="py-4" />
-        <div className="flex bg-white items-center py-4 px-6">
+        <div className="flex bg-white items-center py-4 px-6 hover:text-[#AC8B12]">
          <img src={require('../public/icons/mail.png').default.src} alt="" className="max-h-[1.5rem] mr-4" />
          <h2 className="text-2xl underline">Contact us Via Email</h2>
         </div>
